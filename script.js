@@ -6,9 +6,11 @@ let cantidadM=+prompt("Ingresa la cantidad de mujeres");
 
 let cantidadT=cantidadV+cantidadM;
 
-alert(`El porcentaje de varones es de ${100*cantidadV/cantidadT}%`);
+let porcentajeV=Number(100*cantidadV/cantidadT).toFixed(2);
+let porcentajeM=Number(100*cantidadM/cantidadT).toFixed(2);
+alert(`El porcentaje de varones es de ${porcentajeV}%`);
 
-alert(`El porcentaje de mujeres es de ${100*cantidadM/cantidadT}%`);
+alert(`El porcentaje de mujeres es de ${porcentajeM}%`);
 
 
 //ejercicio 2
